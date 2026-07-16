@@ -10,17 +10,21 @@
   color:#222;
   line-height:1.8;
   }
-
-  .hero{
+.hero{
+  position:relative;
   min-height:100vh;
-  background:linear-gradient(rgba(0,45,74,.75),rgba(0,45,74,.75)),
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background:
+  linear-gradient(rgba(0,40,70,.75),rgba(0,40,70,.75)),
   url("images/hero.jpg");
   background-size:cover;
   background-position:center;
-  display:flex;
-  flex-direction:column;
+  overflow:hidden;
   }
-
+}
+  
   .navbar{
   display:flex;
   justify-content:space-between;
@@ -266,3 +270,33 @@
   .floating-whatsapp:hover{
   transform:scale(1.1);
   }
+.overlay{
+position:absolute;
+inset:0;
+background:linear-gradient(135deg,
+rgba(0,51,77,.25),
+rgba(0,153,204,.15));
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+color:#fff;
+z-index:2;
+}
+
+.badge{
+display:inline-block;
+background:#0099cc;
+color:#fff;
+padding:8px 18px;
+border-radius:30px;
+margin-bottom:20px;
+font-size:15px;
+z-index:2;
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
