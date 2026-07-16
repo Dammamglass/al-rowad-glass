@@ -1,1 +1,1 @@
-console.log('ready');
+console.log('Al Rowad Glass loaded');
